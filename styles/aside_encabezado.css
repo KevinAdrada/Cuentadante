@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f5f6f8; 
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    width: 160px; 
+    height: 160px;
+}
+aside{
+    width: 250px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    text-align: left;
+}
+
+.izquierda{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+main{
+    width: 100%;
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.barra-buscador{
+    position: relative;
+    width: 700px; 
+}
+
+.barra-buscador input{
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.barra-buscador i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 16px;
+}
+.derecha{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.iconos i{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconos i:hover{
+    color: #008000;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.nombre{
+    font-weight: 600;
+}
+.info small{
+    color: green;
+    font-size: 11px;
+}
+.avatar{
+    width: 35px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50%;
+    background-image: url(/imgs/admin_perfil.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.nav ul{
+    list-style: none;
+}
+.nav li {
+    width: 85%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.nav li:hover {
+    border-left: 5px solid #015618;
+    background-color: #ecffe9;
+    cursor: pointer;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav i{
+    font-size: 18px;
+    padding: 0 10px;
+}
+.selected{
+    border-left: 5px solid rgb(1, 87, 24);
+    background-color: rgb(236, 255, 233);
+}
+
+.details-container {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.details-container.is-visible {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details-container button {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.details-container button:hover {
+    background-color: #f0fff4;
+    color: #016a1b;
+}
+.details-container button.cerrar:hover {
+    background-color: rgb(253, 75, 75);
+    color: rgb(255, 255, 255);
+    
+}
+
+button i{
+    font-size: 18px;
+    padding: 0 10px;
+}

@@ -1,0 +1,228 @@
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.3);
+    overflow: hidden;
+    max-width: 150px;
+    max-height: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    flex: 1;
+}
+/* .blue{
+    background-color: rgb(228, 230, 253);
+}
+.green{
+    background-color: rgb(241, 255, 240);
+}
+.red{
+    background-color: rgb(255, 240, 240);
+}
+.yellow{
+    background-color: rgb(255, 255, 240);
+} */
+.card h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card p{
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    padding-bottom: 5px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    border: 2px solid #49a919;
+    box-shadow: 2px 4px 8px rgb(157, 255, 173);
+}
+.section01{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.filtros {
+    display: flex;
+    justify-content: flex-start;
+}
+.filtros select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #dddfe2; 
+    font-size: 12px;
+    cursor: pointer;
+    margin: 20px 0 0;
+}
+
+
+.ids{
+    position: relative;
+    width: 200px; 
+    margin-top: 20px;
+}
+.ids input{
+    width: 100%;
+    padding: 5px 15px 5px 35px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.ids i{
+    position: absolute;
+    left: 12px;
+    top: 20%;
+    color: #6b7280;
+}
+.ids input:focus{
+    box-shadow: 0 0 10px rgb(164, 252, 144);
+}
+
+
+.derecha {
+    display: flex;
+    justify-content: flex-end; /* flex-start lo pone a la izquierda */
+    width: 100%;
+    padding-right: 20px;
+}
+.derecha:focus{
+    box-shadow: #49a919;
+}
+.btn-asignar{
+    padding: 6px;
+    margin: 24px 0 0 0;
+    border-radius: 6px;
+    border: none;
+    background-color: #016a1b;
+    color: white;
+    cursor: pointer;
+}
+.btn-asignar:hover{
+    background-color: rgb(0, 110, 28);
+    box-shadow: 2px 4px 8px rgb(157, 255, 173);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.tabla{
+    width: 98%;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    height: 70%;
+    margin: 12px 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+thead {
+    background: #cdcccb;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+td{
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+td i{
+    color: rgb(0, 0, 0);
+    padding-right: 6px;
+    font-size: 18px;
+}
+tr:nth-child(even){
+    background-color: rgb(238, 238, 238);
+}
+
+
+.detalles {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ventana-emergente {
+    background-color: white;
+    margin: 40px auto;
+    padding: 15px;
+    width: 70%;
+    max-height: 87%;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    
+    overflow-y: auto; 
+    position: relative;
+}
+#modalTitle {
+    position: sticky;
+    top: -20px;
+    background-color: white;
+    margin: 0;
+    padding: 15px 0;
+    z-index: 20;
+}
+.close-btn {
+    position: sticky;
+    top: -10px;
+    float: right;
+    z-index: 30;
+    background-color: white;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+.close-btn:hover{
+    transform: scale(1.4);
+}
+
+
+label{
+    color: rgb(2, 128, 33);
+}
+.input, .select{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 10px;
+    outline: none; border: none;
+    box-shadow: 0 0 4px black;
+    color: rgb(121, 121, 121);
+}
+.input:focus, .select:focus{
+    background-color: rgb(245, 252, 245);
+    box-shadow: 0 0 4px rgb(1, 255, 56);
+}
+.input{
+    width: 205px;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+.btn{
+    border-radius: 6px;
+    padding: 8px;
+    background-color: rgb(2, 128, 33);
+    color: white;
+    border: none;
+    margin: 10px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: rgb(2, 163, 42);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgb(1, 61, 9);
+}
+.static{
+    position: sticky;
+    bottom: 0;
+    z-index: 30;
+}
