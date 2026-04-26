@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/imgs/Icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/aside_encabezado.css">
+    <link rel="stylesheet" href="/styles/reportes.css">
+    <title>Reportes</title>
+</head>
+
+<body>
+    <aside>
+        <div class="izquierda">
+            <div>
+                <img class="logo" src="/imgs/Capa 1.svg" alt="StockMind">
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <a href="./home.html"><li><i class="bi bi-house-door"></i>Home</li></a>
+                    <a href="./ambientes.html"><li><i class="bi bi-folder"></i>Ambientes</li></a>
+                    <a href="./elementos.html"><li><i class="bi bi-list-stars"></i>Elementos</li></a>
+                    <a href="./asignacion.html"><li><i class="bi bi-person-add"></i>Asignaciones</li></a>
+                    <li class="selected"><i class="bi bi-exclamation-triangle"></i>Reportes</li>
+                    <a href="./traslados.html"><li><i class="bi bi-truck"></i>Traslados</li></a>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main>
+        <section>
+            <header>
+                <div class="barra-buscador">
+                    <input type="text" placeholder="Buscar centros de formacion, usuarios o elementos" minlength="1"
+                        maxlength="50">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="derecha">
+                    <div class="iconos">
+                        <i class="bi bi-bell"></i>
+                    </div>
+                    <div class="perfil">
+                        <div class="info">
+                            <span class="nombre">Cuentadante SENA</span>
+                            <small>Cuentadante</small>
+                        </div>
+                        <div class="avatar" id="avatar"></div>
+                        <div class="details-container">
+                            <a href="./perfil.html"><button><i class="bi bi-person-circle"></i>Perfil</button></a>
+                            <button class="cerrar"><i class="bi bi-box-arrow-in-left"></i>Cerrar Sesión </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <h2>Reportes</h2>
+        <br>
+
+        <section>
+            <div class="form-container">
+                <h2>Enviar Nuevo Reporte</h2>
+                <form id="reportForm">
+                    <div class="input-group">
+                        <label for="ambiente">Seleccionar Ambiente</label>
+                        <select id="ambiente" required>
+                            <option value="">Seleccione un ambiente...</option>
+                            <option value="Software 1">Ambiente Software 1</option>
+                            <option value="Software 2">Ambiente Software 2</option>
+                            <option value="Redes">Laboratorio TICS</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="asunto">Asunto de la novedad</label>
+                        <input type="text" id="asunto" placeholder="Ej: Falla en PC #14" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="descripcion">Descripción detallada</label>
+                        <textarea id="descripcion" rows="4" placeholder="Describe el problema aquí..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Reporte al Administrador</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="admin-section">
+            <h2>Reportes Recibidos</h2>
+            <br>
+            <div class="report-grid">
+                <div class="report-card">
+                    <div class="status-badge urgent">Urgente</div>
+                    <div class="report-header">
+                        <h3>Ambiente Software 1</h3>
+                        <span class="report-date">25 Abr 2026</span>
+                    </div>
+                    <div class="report-body">
+                        <p><strong>Asunto:</strong> Monitor no enciende</p>
+                        <p><strong>Aprendiz:</strong> Harold Chantre</p>
+                        <p class="description">El monitor del puesto 12 no da imagen tras el último corte de luz.</p>
+                    </div>
+                    <div class="report-footer">
+                        <button class="btn-action">Marcar como Solucionado</button>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <div class="status-badge normal">Pendiente</div>
+                    <div class="report-header">
+                        <h3>Laboratorio TIC</h3>
+                        <span class="report-date">24 Abr 2026</span>
+                    </div>
+                    <div class="report-body">
+                        <p><strong>Asunto:</strong> Sillas dañadas</p>
+                        <p><strong>Aprendiz:</strong> Luis Noriega</p>
+                        <p class="description">Se requieren 3 sillas nuevas, hay varias sillas rotas</p>
+                    </div>
+                    <div class="report-footer">
+                        <button class="btn-action">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

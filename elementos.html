@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/imgs/Icon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/aside_encabezado.css">
     <link rel="stylesheet" href="/styles/elementos.css">
@@ -22,6 +23,7 @@
                     <a href="./ambientes.html"><li><i class="bi bi-folder"></i>Ambientes</li></a>
                     <li class="selected"><i class="bi bi-list-stars"></i>Elementos</li>
                     <a href="./asignacion.html"><li><i class="bi bi-person-add"></i>Asignaciones</li></a>
+                    <a href="./reportes.html"><li><i class="bi bi-exclamation-triangle"></i>Reportes</li></a>
                     <a href="./traslados.html"><li><i class="bi bi-truck"></i>Traslados</li></a>
                 </ul>
             </nav>
@@ -37,7 +39,6 @@
                 <div class="derecha">
                     <div class="iconos">
                         <i class="bi bi-bell"></i>
-                        <i class="bi bi-gear"></i>
                     </div>
                     <div class="perfil">
                         <div class="info">
@@ -98,7 +99,7 @@
                             <option value="" disabled selected hidden>Estado</option>
                                 <option value="excelente">Excelente</option>
                                 <option value="reparacion">Reparación</option>
-                                <option value="dañado">Dañado</option>
+                                <option value="dañado">Excelente</option>
                         </select>
                         <select>
                             <option value="" disabled selected hidden>Ambiente</option>
@@ -131,9 +132,9 @@
                 <tbody>
                     <tr>
                         <td>001</td>
-                        <td><img src="/imgs/Gemini_Generated_Image_s6o8vqs6o8vqs6o8.png" alt=""></td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Reparación</td>
+                        <td><div class="estado rep">Reparación</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 1</td>
                         <td>Tecnología</td>
@@ -144,9 +145,9 @@
                     </tr>
                     <tr>
                         <td>002</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Excelente</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 2</td>
                         <td>Tecnología</td>
@@ -157,9 +158,9 @@
                     </tr>
                     <tr>
                         <td>003</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Dañado</td>
+                        <td><div class="estado dan">Dañado</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 1</td>
                         <td>Tecnología</td>
@@ -170,9 +171,9 @@
                     </tr>
                     <tr>
                         <td>004</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Excelente</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 2</td>
                         <td>Tecnología</td>
@@ -183,9 +184,9 @@
                     </tr>
                     <tr>
                         <td>005</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Dañado</td>
+                        <td><div class="estado dan">Dañado</div></td>
                         <td>Laptop Z Book</td>
                         <td>Laboratorio TICS</td>
                         <td>Tecnología</td>
@@ -196,9 +197,9 @@
                     </tr>
                     <tr>
                         <td>006</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Reparación</td>
+                        <td><div class="estado rep">Reparación</div></td>
                         <td>Laptop Z Book</td>
                         <td>Laboratorio TICS</td>
                         <td>Tecnología</td>
@@ -209,9 +210,9 @@
                     </tr>
                     <tr>
                         <td>007</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Excelente</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 1</td>
                         <td>Tecnología</td>
@@ -222,9 +223,9 @@
                     </tr>
                     <tr>
                         <td>008</td>
-                        <td>url</td>
+                        <td><img src="/imgs/Zbook.png" alt=""></td>
                         <td>Laptop</td>
-                        <td>Dañado</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Laptop Z Book</td>
                         <td>Software 1</td>
                         <td>Tecnología</td>
@@ -235,9 +236,9 @@
                     </tr>
                     <tr>
                         <td>009</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Reparación</td>
+                        <td><div class="estado rep">Reparación</div></td>
                         <td>Silla RIMAX</td>
                         <td>Software 2</td>
                         <td>Muebles</td>
@@ -248,9 +249,9 @@
                     </tr>
                     <tr>
                         <td>010</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Excelente</td>
+                        <td><div class="estado dan">Dañado</div></td>
                         <td>Silla RIMAX</td>
                         <td>Software 2</td>
                         <td>Muebles</td>
@@ -261,9 +262,9 @@
                     </tr>
                     <tr>
                         <td>011</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Dañado</td>
+                        <td><div class="estado rep">Reparación</div></td>
                         <td>Silla RIMAX</td>
                         <td>Software 2</td>
                         <td>Muebles</td>
@@ -274,9 +275,9 @@
                     </tr>
                     <tr>
                         <td>012</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Excelente</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Silla RIMAX</td>
                         <td>Laboratorio TICS</td>
                         <td>Muebles</td>
@@ -287,9 +288,9 @@
                     </tr>
                     <tr>
                         <td>013</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Reparación</td>
+                        <td><div class="estado rep">Reparación</div></td>
                         <td>Silla RIMAX</td>
                         <td>Laboratorio TICS</td>
                         <td>Muebles</td>
@@ -300,9 +301,9 @@
                     </tr>
                     <tr>
                         <td>014</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Dañado</td>
+                        <td><div class="estado dan">Dañado</div></td>
                         <td>Silla RIMAX</td>
                         <td>Laboratorio TICS</td>
                         <td>Muebles</td>
@@ -313,9 +314,9 @@
                     </tr>
                     <tr>
                         <td>015</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Excelente</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Silla RIMAX</td>
                         <td>Cocina</td>
                         <td>Muebles</td>
@@ -326,9 +327,9 @@
                     </tr>
                     <tr>
                         <td>016</td>
-                        <td>url</td>
+                        <td><img src="/imgs/silla_rimax.png" alt=""></td>
                         <td>Silla</td>
-                        <td>Dañado</td>
+                        <td><div class="estado exc">Excelente</div></td>
                         <td>Silla RIMAX</td>
                         <td>Cocina</td>
                         <td>Muebles</td>

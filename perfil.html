@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/imgs/Icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/aside_encabezado.css">
-    <link rel="stylesheet" href="/styles/perfil.css">
     <title>Perfil</title>
+    <link rel="stylesheet" href="/styles/aside_encabezado.css"> 
+    <link rel="stylesheet" href="/styles/perfil.css">
 </head>
 <body>
     <aside>
@@ -22,83 +23,109 @@
                     <a href="./ambientes.html"><li><i class="bi bi-folder"></i>Ambientes</li></a>
                     <a href="./elementos.html"><li><i class="bi bi-list-stars"></i>Elementos</li></a>
                     <a href="./asignacion.html"><li><i class="bi bi-person-add"></i>Asignaciones</li></a>
+                    <a href="./reportes.html"><li><i class="bi bi-exclamation-triangle"></i>Reportes</li></a>
                     <a href="./traslados.html"><li><i class="bi bi-truck"></i>Traslados</li></a>
                 </ul>
             </nav>
         </div>
     </aside>
-    <main>
-        <section>
-            <header>
-                <div class="barra-buscador">
-                    <input type="text" placeholder="Buscar centros de formacion, usuarios o elementos" minlength="1" maxlength="50">
-                    <i class="bi bi-search"></i>
-                </div>
-                <div class="derecha">
-                    <div class="iconos">
-                        <i class="bi bi-bell"></i>
-                        <i class="bi bi-gear"></i>
+
+
+    <main class="contenido-principal">
+        <div class="perfil-contenedor">
+            
+            <header class="perfil-header">
+                <div class="perfil-info">
+
+                    <div class="avatar-aprendiz">
+                        <img src="imgs/aprendizlogo.png" alt="Perfil Aprendiz" class="avatar-img">
+                        <button class="fotoAprendiz"><i class="bi bi-camera"></i></button>
                     </div>
-                    <div class="perfil">
-                        <div class="info">
-                            <span class="nombre">Cuentadante SENA</span>
-                            <small>Cuentadante</small>
-                        </div>
-                        <div class="avatar"></div>
+                    <div class="texto-perfil">
+                        <h1>Juan Pablo Chamizzo</h1>
+                        <span class="rol">Instructor - Cuentadante</span>
+                        <p>instructorJp@soysena.edu.co</p>
                     </div>
                 </div>
+                <a class="boton-editar">
+                    <i class="bi bi-pencil">Editar Datos</i>
+                </a>
             </header>
-        </section>
-        <section class="seccion_info_perfil">
-            <div class="card perfil_card">
-                <div class="perfil">
-                    <div class="foto_perfil"></div>
-                    <div>
-                        <h1>Leanny Parra</h1>
-                        <p>leanny_parra@soysena.edu.co</p>
-                        <span class="rol">Cuentadante</span>
+
+            <div class="perfil-subtitulo">
+                <section class="perfil-cards">
+                    <h3><i class="bi bi-person-lines-fill"></i>Información Personal</h3>
+
+                    <div class="losDatos">
+
+                        <div class="dato">
+                            <label>Primer Nombre</label>
+                            <div class="dato-falso"><i class="bi bi-person"></i>Juan</div>
+                        </div>
+                        <div class="dato">
+                            <label>Segundo Nombre</label>
+                            <div class="dato-falso"><i class="bi bi-person"></i>Pablo</div>
+                        </div>
+                        <div class="dato">
+                            <label> Primer Apellido</label>
+                            <div class="dato-falso"><i class="bi bi-person-badge"></i>Chamizzo</div>
+                        </div>
+                        <div class="dato">
+                            <label>Segundo Apellido</label>
+                            <div class="dato-falso"><i class="bi bi-person-badge"></i>Vega</div>
+                        </div>
+                        <div class="dato">
+                            <label>Tipo Documento</label>
+                            <div class="dato-falso">C.C.</div>
+                        </div>
+                        <div class="dato">
+                            <label>Número Documento</label>
+                            <div class="dato-falso"><i class="bi bi-card-text"></i> 1001548967</div>
+                        </div>
+                        <div class="dato">
+                            <label>Teléfono</label>
+                            <div class="dato-falso"><i class="bi bi-telephone"></i> 311 458 3026</div>
+                        </div>
+                        <div class="dato-ancho">
+                            <label>Centro de Formacion</label>
+                            <div class="dato-falso"><i class="bi bi-bank"></i>Centro Comercio y Servicios</div>
+                        </div>
+                        <div class="dato-ancho">
+                            <label>Correo Electrónico</label>
+                            <div class="dato-falso"><i class="bi bi-envelope"></i> instructorjp@soysena.edu.co</div>
+                        </div>
                     </div>
-                </div>
-                <button>Editar Perfil</button>
-            </div>
-            <div class="areaInfo">
-                <div class="card info_personal">
-                    <h3>Información Personal</h3>
-                    <div class="personal">
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>3116547852</p>
+                </section>
+
+                <section class="perfil-barraLateral">
+                    <div class="perfil-cards">
+                        <h3><i class="bi bi-shield-lock"></i> Seguridad</h3>
+                        <p class="seguridad-texto">Protege tu cuenta actualizando tu contraseña regularmente.</p>
+                        <br>
+                        <a href="#" class="boton-seguridad">Cambiar Contraseña>
+                        </a>
+                    </div>
+
+                    <div class="perfil-cards">
+                        <h3><i class="bi bi-gear"></i> Preferencias</h3>
+                        <div class="opcion-oscuro">
+                            <span>Modo Oscuro</span>
+                            <label class="switch">
+                                <input type="checkbox" id="check-oscuro">
+                                <span class="slider"></span>
+                            </label>
                         </div>
-                        <div>
-                            <h4>Cargo</h4>
-                            <p>Cuentadante</p>
-                        </div>
-                        <div>
-                            <h4>Ubicación oficina</h4>
-                            <p>Centro de Comercios y Servicios</p>
-                        </div>
-                        <div>
-                            <h4>Sede</h4>
-                            <p>SENA Popayán</p>
+                        <div class="opcion-oscuro">
+                            <span>Notificaciones</span>
+                            <label class="switch">
+                                <input type="checkbox" id="check-notificaciones" checked> <span class="slider"></span>
+                            </label>
                         </div>
                     </div>
-                </div>
-                <div class="card seguridad">
-                    <h3>Seguridad</h3>
-                    <p>2FA Activado</p>
-                    <button>Cambiar contraseña</button>
-                </div>
-                <div class="card preferencias">
-                    <h3>Preferencias</h3>
-                    <p>Notificaciones Email</p>
-                    <p>Modo oscuro</p>
-                </div>
-                <div class="card actividad">
-                    <h3>Actividad Reciente</h3>
-                    <p>Traslado realizado al Ambiente 202</p>
-                    <p>Asignación de 20 elementos</p>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
+    </main>
+    
 </body>
 </html>

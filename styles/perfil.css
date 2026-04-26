@@ -1,73 +1,263 @@
-.perfil{
+.contenido-principal {
+    margin-left: 230px; /* Espacio para tu menú lateral */
+    padding: 40px;
+    background-color: #f8fafc; /* Gris muy claro de fondo */
+    min-height: 100vh;
+    font-family: var(--fuente);
+}
+
+.perfil-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Header del Perfil --- */
+.perfil-header {
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar-aprendiz {
+    position: relative;
+    width: 110px;
+    height: 110px;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--verde-sena);
+}
+
+.fotoAprendiz {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--verde-sena);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.fotoAprendiz:hover { transform: scale(1.1); }
+
+.texto-perfil h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--texto-principal);
+}
+
+.rol {
+    color: var(--verde-sena);
+    font-weight: 700;
+    font-size: 0.9rem;
+    background: #f0fdf4;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.texto-perfil p {
+    margin: 8px 0 0;
+    color: var(--texto-secundario);
+}
+
+/* --- Botones --- */
+/* --- Estilos Base para ambos botones --- */
+.boton-editar, .boton-seguridad {
+    background-color: #49a919;
+    color: white; /* Forzamos blanco para evitar el azul de los links */
+    text-decoration: none; /* Quitamos el subrayado */
+    
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    
+    display: inline-flex; /* Para que el botón se ajuste al texto */
+    align-items: center;
+    gap: 8px;
+    
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- Botón Editar (Específico) --- */
+.boton-editar {
+    float: right; /* Lo manda a la derecha como en tu imagen */
+    margin-bottom: 20px;
+}
+
+/* --- Botón Seguridad (Ancho completo) --- */
+.boton-seguridad {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box; /* Para que el padding no lo ensanche de más */
+}
+
+/* --- Efectos Hover (Cuando pasas el mouse) --- */
+.boton-editar:hover, .boton-seguridad:hover {
+    background-color: #3d8e15; /* Un verde un poco más oscuro */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+    color: white;
+}
+
+/* --- Limpieza para el icono --- */
+.bi {
+    font-style: normal; /* Quita la cursiva por defecto del <i> */
+}
+
+/* --- Cuerpo del Perfil (Grid) --- */
+.perfil-subtitulo {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 30px;
+}
+
+.perfil-cards {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.perfil-cards h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--texto-principal);
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.seccion_info_perfil{
-    width: 100%;
-    max-width: 1100px;
+
+.perfil-cards h3 i { color: var(--verde-sena); }
+
+/* --- Los Datos (Grid Interno) --- */
+.losDatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.dato { display: flex; flex-direction: column; gap: 6px; }
+
+.dato-ancho {
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin: 0 auto;
+    gap: 6px;
 }
-.card{
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+.dato label, .dato-ancho label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--texto-secundario);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
-.perfil_card{
+
+.dato-falso {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: var(--texto-principal);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dato-falso i { color: #9ca3af; }
+
+/* --- Sidebar del Perfil --- */
+.seguridad-texto {
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+    line-height: 1.5;
+}
+
+.opcion-oscuro {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.foto_perfil{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: url(/imgs/retrato-mujer-feliz-tableta-digital_329181-11681.avif);
-    background-size: cover;
-    background-position: center;
-}
-.rol{
-    background: #e1f3e8;
-    color: #1f7a3a;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-}
-.areaInfo{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-.info_personal{
-    grid-column: 1 / 2;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f5f9;
 }
 
-.seguridad{
-    grid-column: 2 / 3;
+.opcion-oscuro:last-child { border-bottom: none; }
+
+/* --- Contenedor del Switch --- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;  /* Ancho del fondo */
+    height: 22px; /* Alto del fondo */
 }
 
-.preferencias{
-    grid-column: 1 / 2;
+/* Ocultar el checkbox original */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.actividad{
-    grid-column: 2 / 3;
-}
-.personal{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-button{
-    background: #1f7a3a;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 20px;
+/* El fondo del switch */
+.slider {
+    position: absolute;
     cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #d1d5db; /* Color gris (apagado) */
+    transition: .3s;
+    border-radius: 34px;
+}
+
+/* El círculo blanco que se mueve */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cuando el checkbox está marcado (Activado) */
+input:checked + .slider {
+    background-color: #39A900; /* Tu verde SENA */
+}
+
+/* Movimiento del círculo a la derecha */
+input:checked + .slider:before {
+    transform: translateX(22px);
 }

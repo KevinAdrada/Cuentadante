@@ -1,0 +1,124 @@
+:root {
+    --primary-green: #49a919;
+    --light-green: #ceffd8;
+    --border-green: #afffbf;
+    --bg-white: #ffffff;
+    --text-dark: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilos del Formulario */
+.form-container {
+    width: 97%;
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.input-group textarea{
+    max-width: 100%;
+}
+
+.input-group input, .input-group select, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #3d8c14;
+    transform: translateY(-2px);
+}
+
+/* Grid de Reportes (Estilo tus tarjetas) */
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.report-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    border-top: 5px solid var(--primary-green);
+    transition: transform 0.2s;
+}
+
+.report-card:hover {
+    transform: scale(1.02);
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.urgent { background: #ffcccc; color: #cc0000; }
+.normal { background: #e0e0e0; color: #666; }
+
+.report-header h3 { margin: 0; font-size: 16px; color: var(--primary-green); }
+.report-date { font-size: 11px; color: #888; }
+
+.report-body {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.report-body p { font-size: 13px; margin: 5px 0; }
+.description { color: #555; font-style: italic; border-left: 2px solid var(--light-green); padding-left: 8px; }
+
+.btn-action {
+    background: var(--light-green);
+    border: 1px solid var(--border-green);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-action:hover {
+    background: #b5f0c1;
+}

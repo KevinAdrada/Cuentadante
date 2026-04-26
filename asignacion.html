@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/imgs/Icon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/aside_encabezado.css">
     <link rel="stylesheet" href="/styles/asignacion.css">
-    <title>Document</title>
+    <title>Asignaciones</title>
 </head>
+
 <body>
     <aside>
         <div class="izquierda">
@@ -22,6 +25,7 @@
                     <a href="./ambientes.html"><li><i class="bi bi-folder"></i>Ambientes</li></a>
                     <a href="./elementos.html"><li><i class="bi bi-list-stars"></i>Elementos</li></a>
                     <li class="selected"><i class="bi bi-person-add"></i>Asignaciones</li>
+                    <a href="./reportes.html"><li><i class="bi bi-exclamation-triangle"></i>Reportes</li></a>
                     <a href="./traslados.html"><li><i class="bi bi-truck"></i>Traslados</li></a>
                 </ul>
             </nav>
@@ -31,13 +35,13 @@
         <section>
             <header>
                 <div class="barra-buscador">
-                    <input type="text" placeholder="Buscar centros de formacion, usuarios o elementos" minlength="1" maxlength="50">
+                    <input type="text" placeholder="Buscar centros de formacion, usuarios o elementos" minlength="1"
+                        maxlength="50">
                     <i class="bi bi-search"></i>
                 </div>
                 <div class="derecha">
                     <div class="iconos">
                         <i class="bi bi-bell"></i>
-                        <i class="bi bi-gear"></i>
                     </div>
                     <div class="perfil">
                         <div class="info">
@@ -83,19 +87,20 @@
         </section>
 
         <section>
-            <div>
-                <div class="filtros">
-                    <div>
-                        <div class="ids">
-                            <input type="text" placeholder="ID o N° documento" minlength="1" maxlength="15">
-                            <i class="bi bi-search"></i>
-                        </div>
+            <div class="filtros">
+                <div class="ids">
+                    <input type="text" placeholder="ID o N° documento" minlength="1" maxlength="15">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="derecha">
+                    <div class="selector-jornada">
+                        <button class="btn-jornada active" data-jornada="mañana">Mañana</button>
+                        <button class="btn-jornada" data-jornada="tarde">Tarde</button>
                     </div>
-                    <div class="derecha">
-                        <button class="btn-asignar">+ Nueva asignación</button>
-                    </div>
+                    <button class="btn-asignar">+ Nueva asignación</button>
                 </div>
             </div>
+
             <table class="tabla">
                 <thead>
                     <tr>
@@ -104,115 +109,246 @@
                         <th>Aprendiz a cargo</th>
                         <th>Tipo de documento</th>
                         <th>N° Documento</th>
+                        <th>Jornada</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>001</td>
                         <td>Laptop Z Book</td>
                         <td>Santiago Chilito</td>
                         <td>CC</td>
                         <td>1086159789</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>002</td>
                         <td>Laptop Z Book</td>
-                        <td>SOftware 1</td>
+                        <td>Harold Chantre</td>
                         <td>CC</td>
                         <td>1061059623</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>003</td>
                         <td>Laptop Z Book</td>
-                        <td>Animacion 3D</td>
+                        <td>Luis Noriega</td>
                         <td>CC</td>
                         <td>1060489504</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>004</td>
                         <td>Laptop Z Book</td>
                         <td>Kevin Adrada</td>
                         <td>TI</td>
                         <td>1061087159</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>005</td>
                         <td>Laptop Z Book</td>
                         <td>David Guerrero</td>
                         <td>CC</td>
                         <td>1086348950</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>009</td>
                         <td>Silla RIMAX</td>
                         <td>Santiago Chilito</td>
                         <td>CC</td>
                         <td>1086159789</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>010</td>
                         <td>Silla RIMAX</td>
-                        <td>SOftware 1</td>
+                        <td>Harold Chantre</td>
                         <td>CC</td>
                         <td>1061059623</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>011</td>
                         <td>Silla RIMAX</td>
-                        <td>Animacion 3D</td>
+                        <td>Luis Noriega</td>
                         <td>CC</td>
                         <td>1060489504</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>012</td>
                         <td>Silla RIMAX</td>
                         <td>Kevin Adrada</td>
                         <td>CC</td>
                         <td>1061087159</td>
+                        <td>Mañana</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
                         </td>
                     </tr>
-                    <tr>
+                    <tr data-jornada="mañana">
                         <td>013</td>
                         <td>Silla RIMAX</td>
                         <td>David Guerrero</td>
                         <td>CC</td>
                         <td>1086348950</td>
+                        <td>Mañana</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>001</td>
+                        <td>Laptop Z Book</td>
+                        <td>Cristian Torres</td>
+                        <td>CC</td>
+                        <td>1065896588</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>002</td>
+                        <td>Laptop Z Book</td>
+                        <td>Mariana Trujillo</td>
+                        <td>CC</td>
+                        <td>1061086549</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>003</td>
+                        <td>Laptop Z Book</td>
+                        <td>Karina Lopez</td>
+                        <td>TI</td>
+                        <td>1065024835</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>004</td>
+                        <td>Laptop Z Book</td>
+                        <td>Marcela Diaz</td>
+                        <td>CC</td>
+                        <td>1060256348</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>005</td>
+                        <td>Laptop Z Book</td>
+                        <td>Jose Bolaños</td>
+                        <td>TI</td>
+                        <td>1086547895</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>009</td>
+                        <td>Silla RIMAX</td>
+                        <td>Cristian Torres</td>
+                        <td>CC</td>
+                        <td>1065896588</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>010</td>
+                        <td>Silla RIMAX</td>
+                        <td>Mariana Trujillo</td>
+                        <td>CC</td>
+                        <td>1061086549</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>011</td>
+                        <td>Silla RIMAX</td>
+                        <td>Karina Lopez</td>
+                        <td>TI</td>
+                        <td>1065024835</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>012</td>
+                        <td>Silla RIMAX</td>
+                        <td>Marcela Diaz</td>
+                        <td>CC</td>
+                        <td>1060256348</td>
+                        <td>Tarde</td>
+                        <td class="acciones">
+                            <i class="bi bi-pencil"></i>
+                            <i class="bi bi-trash"></i>
+                        </td>
+                    </tr>
+                    <tr data-jornada="tarde">
+                        <td>013</td>
+                        <td>Silla RIMAX</td>
+                        <td>Jose Bolaños</td>
+                        <td>TI</td>
+                        <td>1086547895</td>
+                        <td>Tarde</td>
                         <td class="acciones">
                             <i class="bi bi-pencil"></i>
                             <i class="bi bi-trash"></i>
@@ -225,17 +361,26 @@
             <div class="ventana-emergente">
                 <span class="close-btn">&times;</span>
                 <h2 id="modalTitle">Nueva Asignación</h2>
-                
+
                 <form action="./asignacion.html">
+                    <label>Jornada:</label>
+                    <select class="select">
+                        <option disabled selected hidden>jornada</option>
+                        <option value="CC">Tarde</option>
+                        <option value="TI">Tarde</option>
+                    </select>
+                    <br>
                     <label>Tipo de documento:</label>
                     <select class="select">
                         <option disabled selected hidden>Tipo de documento</option>
-                            <option value="CC">Cédula de ciudadanía</option>
-                            <option value="TI">Tarjeta de identidad</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CC">Cédula de ciudadanía</option>
+                        <option value="CC">Cédula Extranjera</option>
                     </select>
                     <br>
                     <label>Número de documento:</label>
-                    <input class="input" type="text" minlength="8" maxlength="15" placeholder="Ingresa el numero de documento">
+                    <input class="input" type="text" minlength="8" maxlength="15"
+                        placeholder="Ingresa el numero de documento" required>
                     <table class="tabla">
                         <thead>
                             <tr>
@@ -294,7 +439,7 @@
                                 <td>Silla RIMAX</td>
                                 <td>Animacion 3D</td>
                             </tr>
-                            
+
                         </tbody>
                     </table>
                     <div class="derecha static">
@@ -307,4 +452,5 @@
         <script src="/JS/asignacion.js"></script>
     </main>
 </body>
+
 </html>
