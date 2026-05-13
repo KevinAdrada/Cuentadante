@@ -10,18 +10,6 @@
     text-align: center;
     flex: 1;
 }
-/* .blue{
-    background-color: rgb(228, 230, 253);
-}
-.green{
-    background-color: rgb(241, 255, 240);
-}
-.red{
-    background-color: rgb(255, 240, 240);
-}
-.yellow{
-    background-color: rgb(255, 255, 240);
-} */
 .card h3{
     font-size: 18px;
     font-weight: bold;
@@ -52,7 +40,7 @@
     width: 98%;
 }
 
-.derecha {
+.derechaz {
     display: flex;
     align-items: center;
     gap: 15px;

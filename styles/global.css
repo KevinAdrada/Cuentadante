@@ -32,6 +32,12 @@ header{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+h2{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 main{
     width: 100%;
     margin-left: 270px;
@@ -80,6 +86,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: right;
+    justify-content: flex-end;
 }
 .nombre{
     font-weight: 600;
@@ -123,8 +130,8 @@ main{
     padding: 0 10px;
 }
 .selected{
-    border-left: 5px solid rgb(1, 87, 24);
-    background-color: rgb(236, 255, 233);
+    border-left: 5px solid #015718;
+    background-color: #ecffe9;
 }
 
 .details-container {
@@ -159,7 +166,7 @@ main{
     color: #016a1b;
 }
 .details-container button.cerrar:hover {
-    background-color: rgb(253, 75, 75);
+    background-color: rgb(255, 91, 91);
     color: rgb(255, 255, 255);
     
 }
@@ -167,4 +174,23 @@ main{
 button i{
     font-size: 18px;
     padding: 0 10px;
+}
+
+.estado{
+    padding: 5px 0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.exc{
+    background-color: #d1fae5;
+    color: #059669;
+}
+.rep{
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+.dan{
+    background-color: #fee2e2;
+    color: #dc2626;
 }

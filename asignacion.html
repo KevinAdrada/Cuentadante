@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/imgs/Icon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/aside_encabezado.css">
+    <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/asignacion.css">
     <title>Asignaciones</title>
 </head>
-
 <body>
     <aside>
         <div class="izquierda">
@@ -32,32 +31,25 @@
         </div>
     </aside>
     <main>
-        <section>
-            <header>
-                <div class="barra-buscador">
-                    <input type="text" placeholder="Buscar centros de formacion, usuarios o elementos" minlength="1"
-                        maxlength="50">
-                    <i class="bi bi-search"></i>
-                </div>
-                <div class="derecha">
-                    <div class="iconos">
-                        <i class="bi bi-bell"></i>
-                    </div>
-                    <div class="perfil">
-                        <div class="info">
-                            <span class="nombre">Cuentadante SENA</span>
-                            <small>Cuentadante</small>
-                        </div>
-                        <div class="avatar" id="avatar"></div>
-                        <div class="details-container">
-                            <a href="./perfil.html"><button><i class="bi bi-person-circle"></i>Perfil</button></a>
-                            <button class="cerrar"><i class="bi bi-box-arrow-in-left"></i>Cerrar Sesión </button>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </section>
+        <header>
         <h2>Asignaciones</h2>
+        <div class="derecha">
+            <div class="iconos">
+                <i class="bi bi-bell"></i>
+            </div>
+            <div class="perfil">
+                <div class="info">
+                    <span class="nombre">Cuentadante SENA</span>
+                    <small>Cuentadante</small>
+                </div>
+                <div class="avatar" id="avatar"></div>
+                <div class="details-container">
+                    <a href="./perfil.html"><button><i class="bi bi-person-circle"></i>Perfil</button></a>
+                    <button class="cerrar"><i class="bi bi-box-arrow-in-left"></i>Cerrar Sesión </button>
+                </div>
+            </div>
+        </div>
+        </header>
         <br>
         <section class="section01">
             <div class="card">
@@ -72,27 +64,14 @@
                     <h3>Aprendices asignaciones</h3>
                 </div>
             </div>
-            <div class="card">
-                <div>
-                    <p>47</p>
-                    <h3>Elementos dañados</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <p>649</p>
-                    <h3>Elementos en buen estado</h3>
-                </div>
-            </div>
         </section>
-
         <section>
             <div class="filtros">
                 <div class="ids">
                     <input type="text" placeholder="ID o N° documento" minlength="1" maxlength="15">
                     <i class="bi bi-search"></i>
                 </div>
-                <div class="derecha">
+                <div class="derechaz">
                     <div class="selector-jornada">
                         <button class="btn-jornada active" data-jornada="mañana">Mañana</button>
                         <button class="btn-jornada" data-jornada="tarde">Tarde</button>
@@ -100,7 +79,6 @@
                     <button class="btn-asignar">+ Nueva asignación</button>
                 </div>
             </div>
-
             <table class="tabla">
                 <thead>
                     <tr>
@@ -214,7 +192,7 @@
                         <td>012</td>
                         <td>Silla RIMAX</td>
                         <td>Kevin Adrada</td>
-                        <td>CC</td>
+                        <td>TI</td>
                         <td>1061087159</td>
                         <td>Mañana</td>
                         <td class="acciones">
@@ -361,7 +339,6 @@
             <div class="ventana-emergente">
                 <span class="close-btn">&times;</span>
                 <h2 id="modalTitle">Nueva Asignación</h2>
-
                 <form action="./asignacion.html">
                     <label>Jornada:</label>
                     <select class="select">
@@ -439,16 +416,14 @@
                                 <td>Silla RIMAX</td>
                                 <td>Animacion 3D</td>
                             </tr>
-
                         </tbody>
                     </table>
-                    <div class="derecha static">
+                    <div class="derechaz static">
                         <button class="btn" type="submit">Realizar asignacion</button>
                     </div>
                 </form>
             </div>
         </div>
-
         <script src="/JS/asignacion.js"></script>
     </main>
 </body>

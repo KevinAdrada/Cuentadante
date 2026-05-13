@@ -17,7 +17,7 @@
 .card p{
     font-size: 27px;
     font-weight: bold;
-    color: rgb(85, 85, 85);
+    color: #555555;
     padding-bottom: 5px;
 }
 .card:hover{
@@ -65,14 +65,12 @@
 .ids input:focus{
     box-shadow: 0 0 10px rgb(164, 252, 144);
 }
-.derecha {
+.seleccion {
     display: flex;
-    justify-content: flex-end; /* flex-start lo pone a la izquierda */
+    justify-content: flex-end;
+    gap: 20px;
     width: 100%;
     padding-right: 20px;
-}
-.derecha:focus{
-    box-shadow: rgb(0, 255, 0);
 }
 
 .tabla{
@@ -110,24 +108,5 @@ td i{
     font-size: 18px;
 }
 tr:nth-child(even){
-    background-color: rgb(238, 238, 238);
-}
-
-.estado{
-    padding: 5px 0;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-.exc{
-    background-color: #d1fae5;
-    color: #059669;
-}
-.rep{
-    background-color: #e0e7ff;
-    color: #4f46e5;
-}
-.dan{
-    background-color: #fee2e2;
-    color: #dc2626;
+    background-color: #eeeeee;
 }
